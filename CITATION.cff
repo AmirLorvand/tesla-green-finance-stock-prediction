@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: "If you use this repository or code, please cite the related paper and this software repository."
+title: "Tesla Green Finance Stock Price Prediction"
+type: software
+
+authors:
+
+* family-names: Lorvand
+  given-names: Amir
+
+date-released: 2026
+repository-code: "https://github.com/AmirLorvand/tesla-green-finance-stock-prediction"
+
+abstract: "Implementation of a sentiment-driven stock price prediction project using FinBERT sentiment analysis on Tesla green finance news and RNN/LSTM models for time-series stock price prediction."
+
+keywords:
+
+* stock price prediction
+* sentiment analysis
+* green finance
+* FinBERT
+* LSTM
+* RNN
+* PyTorch
+* Tesla
+* natural language processing
+* financial machine learning
+
+preferred-citation:
+type: conference-paper
+title: "Sentiment-Driven Stock Price Prediction: Analysing Green Finance News Using Large Language Models for Tesla"
+doi: "10.5220/0014306600004052"
+conference:
+name: "International Conference on Agents and Artificial Intelligence"
+acronym: "ICAART"
+year: 2026
