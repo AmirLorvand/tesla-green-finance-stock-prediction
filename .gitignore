@@ -1,0 +1,71 @@
+# macOS system files
+
+.DS_Store
+__MACOSX/
+
+# Python cache files
+
+**pycache**/
+*.py[cod]
+*.pyo
+
+# Jupyter Notebook checkpoints
+
+.ipynb_checkpoints/
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+
+# Environment variables / secrets
+
+.env
+*.env
+
+# API keys / config files
+
+config.json
+secrets.json
+credentials.json
+api_keys.txt
+
+# Raw API responses / raw news data
+
+raw_data/
+raw_news/
+news_json/
+Tesla_news/
+*.json
+
+# Model checkpoints / trained models
+
+*.pth
+*.pt
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# Large/generated data files
+
+*.zip
+*.tar
+*.gz
+
+# Logs and temporary files
+
+*.log
+*.tmp
+
+# IDE/editor files
+
+.idea/
+.vscode/
+
+# Local outputs
+
+outputs/
+results/
+figures/temp/
