@@ -8,6 +8,7 @@ The project investigates whether sentiment extracted from green finance news can
 
 This project later led to a published conference paper at ICAART 2026 and is currently being extended for a journal version.
 
+📄 **Published paper:** [SCITEPRESS / ICAART 2026](https://www.scitepress.org/Link.aspx?doi=10.5220/0014306600004052)
 ---
 
 ## Project Timeline
