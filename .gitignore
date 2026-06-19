@@ -5,7 +5,7 @@ __MACOSX/
 
 # Python cache files
 
-**pycache**/
+__pycache__/
 *.py[cod]
 *.pyo
 
