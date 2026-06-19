@@ -1,2 +1,247 @@
-# tesla-green-finance-stock-prediction
-Bachelor's final-year AI project using FinBERT sentiment analysis on Tesla green finance news and RNN/LSTM models for stock price prediction.
+# Tesla Green Finance Stock Price Prediction
+
+This repository contains the implementation for my BSc Computer Science final-year project:
+
+**Sentiment-Driven Stock Price Prediction: Analysing Green Finance News Using Large Language Models for Tesla**
+
+The project investigates whether sentiment extracted from green finance news can improve Tesla stock price prediction. It combines **financial news sentiment analysis** using FinBERT with **deep learning time-series models** such as RNN and LSTM.
+
+This project later led to a published conference paper at ICAART 2026 and is currently being extended for a journal version.
+
+---
+
+## Project Timeline
+
+* **Originally completed:** 2025
+* **Published on GitHub:** 2026
+* **Context:** BSc Computer Science final-year project
+* **Current status:** Ongoing research extension for journal submission
+
+This repository has been cleaned and documented for portfolio and research visibility purposes.
+
+---
+
+## Published Paper
+
+This project is related to the following published paper:
+
+**Sentiment-Driven Stock Price Prediction: Analysing Green Finance News Using Large Language Models for Tesla**
+ICAART 2026 — International Conference on Agents and Artificial Intelligence
+DOI: `10.5220/0014306600004052`
+
+Paper links:
+
+* SCITEPRESS paper page: https://www.scitepress.org/Link.aspx?doi=10.5220/0014306600004052
+* PDF: https://www.scitepress.org/Papers/2026/143066/143066.pdf
+
+---
+
+## Project Overview
+
+The project explores the relationship between Tesla stock prices and sentiment in green finance-related news.
+
+The workflow includes:
+
+1. Collecting Tesla stock price data
+2. Collecting green finance-related news articles
+3. Extracting financial sentiment scores using FinBERT
+4. Aggregating daily sentiment scores
+5. Merging sentiment features with stock market data
+6. Performing preprocessing and exploratory data analysis
+7. Training RNN and LSTM models
+8. Comparing models with and without sentiment-based features
+9. Evaluating performance during general and high-volatility market periods
+
+---
+
+## Research Aim
+
+The aim of this project is to examine whether green finance news sentiment can improve the prediction of Tesla stock prices compared with using stock market features alone.
+
+The project focuses on sentiment-enhanced time-series forecasting rather than financial trading or investment recommendation.
+
+---
+
+## Important Disclaimer
+
+This project is for academic and research purposes only.
+
+It is **not financial advice**, and the models should not be used for real trading or investment decisions without further validation, risk analysis, and deployment-level testing.
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* PyTorch
+* FinBERT
+* Hugging Face Transformers
+* scikit-learn
+* yfinance
+* Jupyter Notebook / Google Colab
+
+---
+
+## Main Methods
+
+### Sentiment Analysis
+
+Financial sentiment is extracted from green finance news using **FinBERT**, a transformer-based language model designed for financial text.
+
+The sentiment score is calculated using the model’s positive and negative class probabilities.
+
+### Stock Price Prediction
+
+The project uses deep learning models for time-series prediction, including:
+
+* Recurrent Neural Network
+* Long Short-Term Memory Network
+* models using sentiment score features
+* models using additional financial metrics
+
+### Volatility Window Evaluation
+
+The project also evaluates model behaviour during selected high-volatility periods to examine whether sentiment features are more useful during unstable market conditions.
+
+---
+
+## Project Structure
+
+```text
+.
+├── notebooks/
+│   ├── Downloading_data.ipynb
+│   ├── Extracting Sentiment Scores.ipynb
+│   ├── Data Preprocessing & EDA.ipynb
+│   ├── RNN_with_sentiment_score.ipynb
+│   ├── LSTM_with_sentiment_score.ipynb
+│   ├── RNN_with_financial_metrics.ipynb
+│   ├── LSTM_with_financial_metrics.ipynb
+│   └── volatility_window_model_evaluation.ipynb
+├── data/
+│   ├── tesla_stock_data.csv
+│   ├── merged_sentiment_scores.csv
+│   └── final_dataset.csv
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+Depending on the cleaned GitHub version, some raw data files, API responses, and trained model files may not be included.
+
+---
+
+## Data and API Notes
+
+This project originally used external APIs and Google Colab/Google Drive paths during development.
+
+For security and portability:
+
+* API keys are not included in this repository.
+* Trained model checkpoint files are not included.
+* Raw API response files may be excluded.
+* Some notebook paths may need to be adjusted before running locally.
+
+If running the notebooks yourself, update any file paths to match your local folder structure.
+
+Example:
+
+```python
+data/final_dataset.csv
+```
+
+instead of a Google Drive path such as:
+
+```python
+/content/drive/MyDrive/...
+```
+
+---
+
+## Trained Models
+
+Trained model files are not included in this repository.
+
+They can be regenerated by running the relevant training notebooks.
+
+Excluded model file types include:
+
+```text
+*.pth
+*.pt
+*.pkl
+*.joblib
+```
+
+---
+
+## How to Run
+
+1. Clone the repository.
+
+2. Install the required libraries:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open the notebooks in Jupyter Notebook or Google Colab.
+
+4. If required, update dataset paths inside the notebooks.
+
+5. Run the notebooks in order:
+
+```text
+1. Downloading_data.ipynb
+2. Extracting Sentiment Scores.ipynb
+3. Data Preprocessing & EDA.ipynb
+4. RNN_with_sentiment_score.ipynb
+5. LSTM_with_sentiment_score.ipynb
+6. RNN_with_financial_metrics.ipynb
+7. LSTM_with_financial_metrics.ipynb
+8. volatility_window_model_evaluation.ipynb
+```
+
+---
+
+## Results Summary
+
+The project found that sentiment-enhanced models can improve stock price prediction performance compared with baseline models in some settings.
+
+The LSTM model achieved the strongest overall performance in the original final-year project, and sentiment features appeared especially useful during volatile market periods.
+
+---
+
+## What I Learned
+
+Through this project, I practised:
+
+* Designing a full AI research workflow
+* Collecting and processing financial news data
+* Applying FinBERT for financial sentiment analysis
+* Working with time-series stock market data
+* Merging structured financial data with unstructured text-derived sentiment
+* Building RNN and LSTM models in PyTorch
+* Evaluating models using regression metrics
+* Analysing model behaviour during volatile periods
+* Preparing academic research for publication
+
+---
+
+## Ongoing Work
+
+This project is currently being extended for a journal version.
+
+The extension work includes additional case studies, further comparison models, and broader analysis beyond the original Tesla-focused final-year project.
+
+---
+
+## Author
+
+**Amir Lorvand**
+
+Final-year project supervised by **Dr Halil Yetgin**.
